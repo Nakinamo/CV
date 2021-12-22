@@ -21,17 +21,20 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
-#       - name: Build Docker Image
-#         uses: docker/build-push-action@v2
-#         with:
-#           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/cv-compile:latest
-#           push: true
+      - name: Build Docker Image
+        uses: docker/build-push-action@v2
+        with:
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/cv-compile:latest
+          push: true
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/cv-compile:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/cv-compile:buildcache,mode=max
 
       - name: Run Docker Image
         run: docker run -v ${{ github.workspace }}/CV:/CV ${{ secrets.DOCKER_HUB_USERNAME }}/cv-compile:latest
         
       - name: Commit CV
         run: |
+          git status
           git config --global user.name "Bot"
           git config --global user.email "Bot@noreply.com"
           git checkout -b temp
