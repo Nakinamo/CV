@@ -43,3 +43,4 @@ jobs:
           git push -u origin temp
           git checkout main
           git merge temp
+          git branch -d origin/temp
