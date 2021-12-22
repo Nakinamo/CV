@@ -41,3 +41,5 @@ jobs:
           git add -A
           git commit -am "Automated commit"
           git push -u origin temp
+          git checkout main
+          git merge temp
