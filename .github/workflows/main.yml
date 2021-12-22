@@ -28,7 +28,7 @@ jobs:
           push: false
 
       - name: Run Docker Image
-        run: docker run -v $(pwd)/CV:/CV -ti cv-compile:latest
+        run: docker run -v $(pwd)/CV:/CV -t cv-compile:latest
   
   push:
     runs-on: debian:10.3
