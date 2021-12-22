@@ -29,17 +29,11 @@ jobs:
 
       - name: Run Docker Image
         run: docker run -v ${{ github.workspace }}/CV:/CV ${{ secrets.DOCKER_HUB_USERNAME }}/cv-compile:latest
-  
-  push:
-    runs-on: ubuntu-latest
-    needs: build
-    
-    steps:
-      - uses: actions/checkout@v2
-      
-      - name: Push to Temp Branch
+        
+      - name: Commit CV
         run: |
+          git remote set-url origin https://github.com/Nakinamo/CV.git
           git checkout temp
           git add -A
-          git commit -m "CV compiled"
+          git commit -am "Automated commit"
           git push
