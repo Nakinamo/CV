@@ -28,18 +28,18 @@ jobs:
           push: false
 
       - name: Run Docker Image
-        run: docker run -v (pwd)/CV:/CV -ti cv-compile:latest
+        run: docker run -v $(pwd)/CV:/CV -ti cv-compile:latest
   
-#   push:
-#     runs-on: debian:10.3
-#     needs: build
+  push:
+    runs-on: debian:10.3
+    needs: build
     
-#     steps:
-#       - uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
       
-#       - name: Push to Temp Branch
-#       - run: |
-#           git checkout temp
-#           git add -A
-#           git commit -m "CV compiled"
-#           git push
+      - name: Push to Temp Branch
+        run: |
+          git checkout temp
+          git add -A
+          git commit -m "CV compiled"
+          git push
