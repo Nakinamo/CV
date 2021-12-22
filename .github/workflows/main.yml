@@ -33,7 +33,7 @@ jobs:
       - name: Commit CV
         run: |
           git remote set-url origin https://github.com/Nakinamo/CV.git
-          git checkout temp
+          git checkout -b temp
           git add -A
           git commit -am "Automated commit"
-          git push
+          git push -u temp
