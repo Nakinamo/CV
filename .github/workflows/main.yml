@@ -40,4 +40,4 @@ jobs:
           git checkout -b temp
           git add -A
           git commit -am "Automated commit"
-          git push -u temp
+          git push -u origin temp
