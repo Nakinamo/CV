@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Nikolai Kossa} \\ \vspace{1pt}
+    \small +7 925 901 95 50 $|$ \href{mailto:nikolaikossa@gmail.com}{\underline{nikolaikossa@gmail.com}} $|$ 
+    % \href{https://www.linkedin.com/in/nikolai-kossa-906897215/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Nakinamo}{\underline{github.com/nakinamo}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HSE University}{Expected September 2024}
+      {Bachelor of Computer Science}{}
+      
+      ~\\\emph{\footnotesize Currently a student of bachelor’s degree in Applied Mathematics and Computer Science}
+        %   \resumeItemListStart
+            % \resumeItem{GPA: 3.5}
+            % \resumeItem{Award/Achievement/Involvement 2}
+            % \resumeItem{Award/Achievement/Involvement 3}
+        % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{June 2021 – October 2021}
+      {\href{https://www.yandex.ru}{Yandex}}{Moscow, Russia}
+      \resumeItemListStart
+        \resumeItem{Expanded the coverage of the search suggestions by 0.5\%}
+        \resumeItem{Automated the data markup and ml pools building}
+        \resumeItem{Added new data sources}
+      \resumeItemListEnd
+      \emph{\footnotesize SQL, C++, Python, Bash}
+      
+    \resumeSubheading
+      {Algorithms Tutor}{December 2018}
+      {Intensive Competitive Programming Classes for Schoolchildren}{Barnaul, Russia}
+      \resumeItemListStart
+        \resumeItem{Taught basic algorithms and data structures}
+        \resumeItem{Helped children solve problems and write code}
+        % \resumeItem{Job description/Award/Achievement 3}
+      \resumeItemListEnd
+      
+     
+    \resumeSubHeadingListEnd
+
+
+%-----------COMMUNITY AND LEADERSHIP-----------
+
+% \section{Community \& Leadership}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Role 1}{November 2021 – Present}
+%       {Club/Organization 1}{Melbourne, VIC}
+%       \resumeItemListStart
+%         \resumeItem{Job description/Award/Achievement 1}
+%         \resumeItem{Job description/Award/Achievement 2}
+%         \resumeItem{Job description/Award/Achievement 3}
+%       \resumeItemListEnd
+      
+%     \resumeSubheading
+%       {Role 2}{November 2021 – Present}
+%       {Club/Organization 2}{Melbourne, VIC}
+%       \resumeItemListStart
+%         \resumeItem{Job description/Award/Achievement 1}
+%         \resumeItem{Job description/Award/Achievement 2}
+%         \resumeItem{Job description/Award/Achievement 3}
+%       \resumeItemListEnd
+
+%     \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Nakinamo/hash_map}{Hash Map Implementation}} $|$ \emph{C++}}{June 2021}
+          ~\\
+          \qquad\small{Training project for an algorithms and data structures course}
+        %   \resumeItemListStart
+            % \resumeItem{Training project for an algorithms and data structures course}
+            % \resumeItem{Project Description 2}
+        %   \resumeItemListEnd
+
+    %   \resumeProjectHeading
+    %       {\textbf{Project Title 2} $|$ \emph{Technologies used}}{June 2021 -- Present}
+    %       \resumeItemListStart
+    %         \resumeItem{Project Description 1}
+    %         \resumeItem{Project Description 2}
+    %       \resumeItemListEnd
+         
+
+    \resumeSubHeadingListEnd
+
+%-----------PERSONAL ACHIEVEMENTS-----------
+
+\section{Personal Achievements}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google Hash Code}{2021}
+      {}{}
+      
+      \qquad\small{254th out of 9004 teams}
+    %   \resumeItemListStart
+        % \resumeItem{Job description/Award/Achievement 1}
+        % \resumeItem{Job description/Award/Achievement 2}
+        % \resumeItem{Job description/Award/Achievement 3}
+    %   \resumeItemListEnd
+      
+    \resumeSubheading
+      {Russian State Olympiad in Informatics}{2019 -- 2020}
+      {}{}
+      
+      \qquad\small{120th out of more than 13000 participants}
+    %   \resumeItemListStart
+    %     \resumeItem{Job description/Award/Achievement 1}
+    %     \resumeItem{Job description/Award/Achievement 2}
+    %     \resumeItem{Job description/Award/Achievement 3}
+    %   \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++, Python, SQL, Bash} \\
+    %  \textbf{Frameworks}{: X, X, X} \\
+     \textbf{Developer Tools}{: GDB, Git} \\
+     \textbf{Libraries}{: NumPy, Pandas, MatPlotLib} \\
+     \textbf{Languages}{: Russian, English}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
