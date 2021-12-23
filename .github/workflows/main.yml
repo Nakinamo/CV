@@ -46,9 +46,12 @@ jobs:
       - name: Publish CV
         run: |
           git fetch
-          git checkout -b gh-pages origin/gh-pages
+          git checkout -b gh-pages-temp
           git checkout main CV/main.pdf
           mv CV/ docs/
           git add docs/main.pdf
           git commit -am "Automated commit"
-          git push -u origin gh-pages
+          git push -u origin gh-pages-temp
+          git checkout -b gh-pages origin/gh-pages
+          git merge gh-pages-temp
+          git push origin -d gh-pages-temp
