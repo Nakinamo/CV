@@ -49,4 +49,4 @@ jobs:
           cp CV/main.pdf main.pdf
           git add main.pdf
           git commit -am "Automated commit"
-          git push -u gh-pages
+          git push -u origin gh-pages
