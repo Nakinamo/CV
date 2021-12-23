@@ -49,7 +49,7 @@ jobs:
         run: |
           git checkout -b gh-pages origin/gh-pages
           git checkout main CV/main.pdf
-          mv CV/ docs/
+          mv CV/main.pdf docs/main.pdf
           git add docs/main.pdf
           git commit --allow-empty -am "Automated commit"
           git push origin gh-pages
