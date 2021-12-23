@@ -36,16 +36,16 @@ jobs:
         run: |
           git config --global user.name "Bot"
           git config --global user.email "Bot@noreply.com"
+          git fetch
           git checkout -b temp
           git add -A
           git commit -am "Automated commit"
           git push -u origin temp
-          git checkout main
+          git checkout main origin/main
           git merge temp
           git push origin -d temp
       - name: Publish CV
         run: |
-          git fetch
           git checkout -b gh-pages origin/gh-pages
           git checkout main CV/main.pdf
           mv CV/ docs/
