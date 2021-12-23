@@ -46,6 +46,7 @@ jobs:
       - name: Publish CV
         run: |
           git checkout -b gh-pages
+          git pull
           cp CV/main.pdf main.pdf
           git add main.pdf
           git commit -am "Automated commit"
