@@ -52,4 +52,4 @@ jobs:
           mv CV/ docs/
           git add docs/main.pdf
           git commit --allow-empty -am "Automated commit"
-          git push -u origin gh-pages
+          git push origin gh-pages
