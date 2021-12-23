@@ -45,6 +45,7 @@ jobs:
           git push origin -d temp
       - name: Publish CV
         run: |
+          git fetch
           git checkout -b gh-pages origin/gh-pages
           git checkout main CV/main.pdf
           git add main.pdf
