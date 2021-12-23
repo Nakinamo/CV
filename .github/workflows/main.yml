@@ -45,9 +45,8 @@ jobs:
           git push origin -d temp
       - name: Publish CV
         run: |
-          git checkout -b gh-pages
-          git pull
-          cp CV/main.pdf main.pdf
+          git checkout -b gh-pages origin/gh-pages
+          git checkout main CV/main.pdf
           git add main.pdf
           git commit -am "Automated commit"
           git push -u origin gh-pages
