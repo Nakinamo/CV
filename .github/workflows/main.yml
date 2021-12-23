@@ -48,6 +48,6 @@ jobs:
           git fetch
           git checkout -b gh-pages origin/gh-pages
           git checkout main CV/main.pdf
-          git add main.pdf
+          git add CV/main.pdf
           git commit -am "Automated commit"
           git push -u origin gh-pages
